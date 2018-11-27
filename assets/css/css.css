@@ -1,0 +1,149 @@
+*{
+	outline: none;
+}
+body{
+	margin: 0;
+	font-family: Candara;
+}
+a{
+	text-decoration: none;
+}
+h2{
+	font-size: 20pt;
+}
+.top-gray{
+	width:100%;
+	height: 12px;
+	background:#333;
+}
+.header{
+	width: 1000px;
+	margin: 0 auto;
+}
+.menu{
+	background: #dd4814;
+	border:1px solid #bf3e11;
+	border-radius: 5px;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+}
+.menu ul li{
+	list-style: none;
+	display: inline-block;
+}
+.menu ul li.logout{
+	float:right;
+}
+.menu ul li:hover{
+	background: #bf3e11;
+}
+.menu ul li a{
+	color: #fff;
+}
+.menu ul li a div{
+	padding: 15px 25px;
+}
+.big-logo{
+	font-size: 30pt;
+	color:#333;
+	padding: 20px 0;
+	font-weight: bold;
+}
+.content{
+	width:1000px;
+	margin: 0 auto;
+}
+button,.btn{
+	background: #dd4814;
+	border:1px solid #bf3e11;
+	border-radius: 5px;
+	padding: 10px 15px;
+	color:white;
+	display: inline-block;
+	margin: 10px 0;
+	font-family: Candara;
+	font-size: 12pt;
+}
+.btn:hover{
+	background: #bf3e11;
+}
+.pull-right{
+	float: right;
+}
+.img-small{
+	max-width: 100px;
+	max-height: 100px;
+}
+.img-mini{
+	max-width: 10px;
+	max-height: 10px;
+}
+table{
+	width: 100%;
+}
+table.data,table.data tr th,table.data tr td{
+	border-collapse: collapse;
+	border: 1px solid #bf3e11;
+}
+table.data tr td{
+	text-align: center;
+}
+input,textarea{
+	font-size: 12pt;
+	font-family: Candara;
+	padding: 5px;
+	width: 100%;
+	border:1px solid #999;
+}
+input:hover,textarea:hover{
+	border:1px solid #bf3e11;
+}
+.form{
+	clear:both;width:200px;margin-right:12px;
+	float: right;
+}
+
+/*responsive*/
+@media screen and (max-width: 600px){
+	.header, .content{
+		width: 100%;
+	}
+	body{
+		margin: 10px;
+	}
+	.menu ul li{
+		display: block;
+		padding: 10px;
+		clear: left;
+	}
+	.menu ul li a{
+		font-size: 10pt;
+	}
+	.big-logo,h1{
+		text-align:center;
+		font-size: 15pt;
+	}
+	input,select,textarea{
+		width:95%;
+		float: none;
+		display: block;
+	}
+	.menu ul li.logout{
+		float:none;
+		display: block;
+	}
+	.btn{
+		display: block;
+		width: 90%;
+		float: none;
+		text-align: center;
+	}
+
+	.form{
+		clear:both;width:100%;margin:0;
+		float: none;
+	}
+
+}
